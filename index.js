@@ -12,6 +12,7 @@ const openai = new OpenAI({
 
 const argv = yargs(hideBin(process.argv))
   .demandOption('project', 'Please provide the project path')
+  .usage('./index.js --project=/opt/tmp/tasks-nodejs-5/03-streams/05-file-server-delete')
   .parse();
 
 async function main() {
