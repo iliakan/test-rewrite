@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const { log } = require('console');
 const OpenAI = require('openai');
 const yargs = require('yargs');
 const { hideBin } = require('yargs/helpers');
@@ -8,7 +7,7 @@ const path = require('path');
 const fs = require('fs');
 
 const openai = new OpenAI({
-  apiKey: process.env['OPENAI_API_KEY2'], // This is the default and can be omitted
+  apiKey: process.env['OPENAI_API_KEY2']
 });
 
 const argv = yargs(hideBin(process.argv))
